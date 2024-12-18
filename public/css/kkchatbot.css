@@ -1,0 +1,102 @@
+/* Icona del chatbot visibile sempre */
+#chatbot-icon-wrapper {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border: 3px solid red; /* Bordo rosso */
+	border-radius: 50%; /* Cerchio */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+#chatbot-icon {
+	width: 50px;
+	height: 50px;
+}
+
+/* Contenitore principale del chatbot */
+#chatbot {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 320px;
+	height: 500px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	display: none; /* Nasconde la maschera all'inizio */
+	flex-direction: column;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+	z-index: 1001;
+}
+
+/* Header del chatbot */
+#chatbot-header {
+	background: linear-gradient(90deg, #0084FF, #00C6FF);
+	color: white;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#chatbot-header-icon {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+#chatbot-close {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/* Corpo del chatbot */
+#chatbot-content {
+	flex: 1;
+	background: #f9f9f9;
+	padding: 15px;
+	overflow-y: auto;
+	color: #555;
+}
+
+/* Footer con input e bottone */
+#chatbot-footer {
+	display: flex;
+	align-items: center;
+	background: #f1f1f1;
+	padding: 10px;
+	border-top: 1px solid #ddd;
+}
+
+#chatbot-input {
+	flex: 1;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	outline: none;
+	margin-right: 5px;
+}
+
+#chatbot-send {
+	background: #0084FF;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#chatbot-send:hover {
+	background: #005bb5;
+}
